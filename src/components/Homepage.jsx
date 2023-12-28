@@ -115,7 +115,7 @@ const Homepage=()=>{
   }, []);
     return(
        
-        <div className='full-screen-image relative mx-8' >
+        <div  >
              <div className="overlay1"></div>
              <div className="homepage">
         <div className="flex-col-reverse md:flex-row justify-between px-4 mx-auto md:px-8">

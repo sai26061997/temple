@@ -13,21 +13,12 @@ body{
   background-image: url("http://wycombemeenatchiammantemple.co.uk/images/home-banner-2.jpg");
 }
 
-.animate-slide-in {
-  animation: slideIn 0.5s ease-in-out forwards;
-}
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 
+
+/*This is the homepage section */
 
 .full-screen-image {
-  background-image: url("./Swami_Photos/Swami_al.jpg");
+ 
   background-size: cover;
   background-position: center;
   height: calc(100vh - 80px); /* Adjust 80px to match the navbar height */
@@ -43,6 +34,179 @@ body{
   }
 }
 
+
+.homepage {
+  background-blend-mode: multiply; /* Adjust the blend mode as needed */
+}
+
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.photo-frame {
+  border: 5px solid white;
+  padding: 10px;
+  transform: rotate(-5deg);
+  animation: photoFrameAnimation 3s infinite alternate; /* Animation for the photo frame */
+}
+
+
+.photo-frame img {
+  max-width: 100%;
+  height: 400px;
+}
+
+/*This is the navbar section */
+
+.header-2 {
+  background-color: transparent;
+}
+
+
+.navbar-curved-bg svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.navbar-curved-bg {
+  background: linear-gradient(to bottom, #FFD700, #FFA500);
+  border-bottom-left-radius: 50% 70px;
+  border-bottom-right-radius: 50% 70px;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-size: 54px; /* Adjust the font size as needed */
+  color: rgba(255, 255, 255, 0.993); /* Adjust the color as needed */
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+.animate-slide-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem; /* Adjust as needed */
+  padding-right: 1rem; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.custom-link {
+  color: #4a5568; /* Adjust as needed for text-gray-600 */
+  text-decoration: none; /* Adjust as needed */
+  transition: color 0.3s ease-in-out; /* Adjust the transition duration as needed */
+  font-family: 'Pacifico', cursive;
+ 
+}
+
+.custom-link:hover {
+  color: #667eea; /* Adjust as needed for hover:text-indigo-600 */
+}
+
+.custom-link.margin-right {
+  margin-right: 1rem; /* Adjust as needed for mr-4 */
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-size {
+  height: 50px; /* Adjust as needed for h-50 */
+  width: 30px; /* Adjust as needed for w-30 */
+}
+
+
+
+
+/*This is the mobile section of both */
+
+
+@media only screen and (max-width: 768px) {
+  .full-screen-image {
+    height: 100vh;
+  }
+  
+  .welcome-text {
+    font-size: 36px; /* Adjust the font size for smaller screens */
+    color: rgba(255, 255, 255, 0.993); /* Adjust the color for smaller screens */
+  }
+
+  .left-section {
+    text-align: center;
+  }
+
+  .photo-frame img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Navbar section for mobile */
+
+  .header-2 {
+    background-color: transparent;
+  }
+
+  .navbar-curved-bg svg {
+    display: none; /* Hide the curved background on smaller screens if needed */
+  }
+
+  .navbar-curved-bg {
+    border-radius: 0; /* Remove curved border on smaller screens */
+    background: linear-gradient(to bottom, #FFD700, #FFA500);
+  }
+
+  .welcome-text {
+    font-size: 23px; /* Adjust the font size for smaller screens */
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+
+  .animate-slide-in {
+    flex-direction: column; /* Adjust flex direction for smaller screens */
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem; /* Adjust padding as needed for smaller screens */
+    padding-right: 0.5rem; /* Adjust padding as needed for smaller screens */
+  }
+
+  .custom-link {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-right: 0.5rem; /* Adjust margin for smaller screens */
+  }
+
+  .image-size {
+    height: 30px; /* Adjust as needed for smaller screens */
+    width: 20px; /* Adjust as needed for smaller screens */
+  }
+  
+
+}
 .animate-gradient {
   background-size: 200% 100%;
   background-image: linear-gradient(to right, #4F46E5, #D53CF5);
@@ -50,9 +214,7 @@ body{
 }
 
 
-.animate-fadeInUp {
-  animation: fadeInUp 1s ease-out;
-}
+
 
 
 .scrolling-list {
@@ -79,21 +241,6 @@ body{
 
 
 
-.navbar-curved-bg svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-
-.navbar-curved-bg {
-  background: linear-gradient(to bottom, #FFD700, #FFA500);
-  border-bottom-left-radius: 50% 70px;
-  border-bottom-right-radius: 50% 70px;
-  overflow: hidden;
-}
 
 .overlay {
   position: absolute;
@@ -105,9 +252,7 @@ body{
 }
 
 
-.header-2 {
-  background-color: transparent;
-}
+
 
 .navbar-bg {
   background: linear-gradient(to bottom, #4F46E5, #D53CF5);
@@ -120,10 +265,7 @@ body{
   background-blend-mode: multiply; /* Adjust the blend mode as needed */
 }
 
-.welcome-text {
-  font-size: 54px; /* Adjust the font size as needed */
-  color: rgba(255, 255, 255, 0.993); /* Adjust the color as needed */
-}
+
 
 
 
