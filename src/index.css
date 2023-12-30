@@ -18,7 +18,7 @@ body{
 /*This is the homepage section */
 
 .full-screen-image {
- 
+  background-image: url("./Swami_Photos/Swami_al.jpg");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 80px); /* Adjust 80px to match the navbar height */
@@ -78,7 +78,7 @@ body{
 
 
 .navbar-curved-bg {
-  background: linear-gradient(to bottom, #FFD700, #FFA500);
+  background: linear-gradient(to bottom, #FFD700, #eca400);
   border-bottom-left-radius: 50% 70px;
   border-bottom-right-radius: 50% 70px;
   overflow: hidden;
@@ -533,3 +533,39 @@ body{
   }
 }
 
+/* Animation */
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #eca400 50%, white 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}

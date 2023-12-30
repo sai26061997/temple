@@ -25,7 +25,7 @@ const Navbar=()=>{
           
           <span className="animate-fadeInUp">Welcome</span>
             <span className="animate-fadeInUp ml-2">to</span>
-            <span className="animate-fadeInUp ml-2">London</span>
+            <span className="animate-fadeInUp ml-2">high wycombe</span>
             <span className="animate-fadeInUp ml-2">Meenakshi</span>
             <span className="animate-fadeInUp ml-2">Temple</span>
 

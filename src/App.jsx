@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter} from "react-router-dom";
-import { Homepage, Navbar,List } from './components';
+import { Homepage, Navbar,List, TeamComponent } from './components';
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
     <div>
     <Navbar/>
     <Homepage/>
-
-  ``<List/>
+    <TeamComponent/>
+  ``
     </div>
 
     </BrowserRouter>

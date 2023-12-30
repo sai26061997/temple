@@ -2,6 +2,8 @@ import React ,{ useState, useEffect } from 'react'
 import {styles} from "../stykes1"
 import { logo } from '../assets'
 
+import MainAnimation from './Animation1'
+
 import photo1 from "../Swami_Photos/Sawmi_front_1.jpg"
 import photo2 from "../Swami_Photos/Swami_murugar.jpg"
 import photo3 from "../Swami_Photos/Swami_kumbam.jpg"
@@ -116,6 +118,7 @@ const Homepage=()=>{
     return(
        
         <div  >
+          <MainAnimation/>
              <div className="overlay1"></div>
              <div className="homepage">
         <div className="flex-col-reverse md:flex-row justify-between px-4 mx-auto md:px-8">
